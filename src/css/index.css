@@ -1,0 +1,157 @@
+body{
+    background-color: black;
+}
+
+.item0{ grid-area: header; }
+.item1{ grid-area: content1; }
+.item2{ grid-area: content2; }
+.item3{ grid-area: content3; }
+.item4{ grid-area: content4; }
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    font-weight: 900;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Prata';
+    font-weight: 100;
+}
+.title_white{
+    color: white;
+}
+.tittle_gray{
+    color: #B3B3B3;
+}
+.grid_container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'content1 content1 content1 content1 content1 content1'
+    'content2 content2 content2 content2 content2 content2'
+    'content3 content3 content3 content3 content3 content3'
+    'content4 content4 content4 content4 content4 content4';
+    gap: 10px;
+    padding: 10px;
+}
+.grid_container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    
+}
+/* item0 */
+.item0{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+.item0 > div{
+    display: block;
+    padding: 10px;
+}
+.item0 > .navBar > nav{
+    float: left;
+}
+.navBar > nav > ul{
+    list-style: none;
+    overflow: hidden;
+}
+.navBar > nav > ul > li{
+    float: left;
+}
+.navBar > nav > ul > li > a{
+    text-decoration: none;
+
+    display: block;
+    padding: 20px;
+    color: black;
+}
+
+.button > button{
+    background-color: transparent;
+    border: none;
+
+    background-color: yellow;
+    padding: 20px 45px;/*Padin de arriba y abajo de 10px y a los lados de 35px*/
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    ;
+}
+/* item 1 */
+.item1 > div{
+    margin: auto 120px;
+}
+.item1> div:nth-child(1),
+.item1> div:nth-child(2){
+    text-align: start;
+}
+.item1 div > h2{
+    color: white;
+    font-size: 50px;
+}
+.item1 div > .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+.item1 div > .images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.item1 div > .images > .imageContainer1 > h1 > a,
+.item1 div > .images > .imageContainer2 > h1 > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* item2 */
+.grid_container >.item2{
+    background-color: #383A42;
+
+}
+.grid_container > .item2 > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item2 > div{
+    margin: auto 120px;
+    text-align: start;
+}
+
+/* item3 */
+.item3 > div{
+    margin: auto 120px;
+    text-align: start;
+}
+
+/* item4 */
+.item4{
+    background-color: #383A42;
+}
+.item4 > div{
+    margin: auto 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/*
+Esquina de pescador acochera residencias san martin torre B, apartamento B61. Diagonal a trancito de San Juan
+
+ci 11.678.548
+
+0424- Inteligente
+0412- Perolito
+mas de 10 anos
+ingeniero geofisico
+*/
